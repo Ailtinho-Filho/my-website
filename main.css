@@ -1,25 +1,40 @@
+.header {
+    position: relative;
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
 .overlay {
     position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
     top: 0;
-    background: rgba(244, 244, 244, 0.79);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
 }
-
-.header {
-    background-image: url('../images/headerback.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
 .description {
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
+    position: relative;
+    z-index: 1;
 }
-
-.description h1 {
-    color: white;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+.social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-media li a {
+    color: #333;
+    text-decoration: none;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
